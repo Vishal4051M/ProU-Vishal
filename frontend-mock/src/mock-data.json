@@ -1,0 +1,54 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Alex Morgan",
+            "email": "alex@example.com",
+            "role": "Designer",
+            "avatar": "https://ui-avatars.com/api/?name=Alex+Morgan&background=c7d2fe&color=3730a3"
+        },
+        {
+            "id": 2,
+            "name": "Sarah Chen",
+            "email": "sarah@example.com",
+            "role": "Engineer",
+            "avatar": "https://ui-avatars.com/api/?name=Sarah+Chen&background=bbf7d0&color=166534"
+        },
+        {
+            "id": 3,
+            "name": "James Wilson",
+            "email": "james@example.com",
+            "role": "Product Manager",
+            "avatar": "https://ui-avatars.com/api/?name=James+Wilson&background=fecaca&color=991b1b"
+        }
+    ],
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Design System Refresh",
+            "description": "Update color palette and typography tokens.",
+            "status": "IN_PROGRESS",
+            "assignee_id": 1,
+            "due_date": "2024-12-01",
+            "created_at": "2024-11-15T10:00:00Z"
+        },
+        {
+            "id": 2,
+            "title": "API Integration",
+            "description": "Connect frontend to the new tasks endpoint.",
+            "status": "TODO",
+            "assignee_id": 2,
+            "due_date": "2024-12-05",
+            "created_at": "2024-11-16T14:30:00Z"
+        },
+        {
+            "id": 3,
+            "title": "Q4 Roadmap",
+            "description": "Draft initial goals for next quarter.",
+            "status": "DONE",
+            "assignee_id": 3,
+            "due_date": "2024-11-20",
+            "created_at": "2024-11-10T09:15:00Z"
+        }
+    ]
+}
