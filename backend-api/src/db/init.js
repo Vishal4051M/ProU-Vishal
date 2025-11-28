@@ -41,9 +41,11 @@ export const init = (database = db) => {
   `);
 
   const employees = [
-    ['Alex Morgan', 'alex@example.com', 'Designer', 'https://ui-avatars.com/api/?name=Alex+Morgan&background=c7d2fe&color=3730a3'],
-    ['Sarah Chen', 'sarah@example.com', 'Engineer', 'https://ui-avatars.com/api/?name=Sarah+Chen&background=bbf7d0&color=166534'],
-    ['James Wilson', 'james@example.com', 'Product Manager', 'https://ui-avatars.com/api/?name=James+Wilson&background=fecaca&color=991b1b']
+    ['Vishal', 'vishal@example.com', 'Full Stack Developer', 'https://ui-avatars.com/api/?name=Vishal&background=c7d2fe&color=3730a3'],
+    ['Rishi', 'rishi@example.com', 'Backend Developer', 'https://ui-avatars.com/api/?name=Rishi&background=bbf7d0&color=166534'],
+    ['Siddu', 'siddu@example.com', 'Frontend Developer', 'https://ui-avatars.com/api/?name=Siddu&background=fecaca&color=991b1b'],
+    ['Hithes', 'hithes@example.com', 'UI/UX Designer', 'https://ui-avatars.com/api/?name=Hithes&background=fed7aa&color=c2410c'],
+    ['Uday', 'uday@example.com', 'Project Manager', 'https://ui-avatars.com/api/?name=Uday&background=e9d5ff&color=7e22ce']
   ];
 
   employees.forEach(emp => insertEmployee.run(...emp));
