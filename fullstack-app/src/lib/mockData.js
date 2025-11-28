@@ -19,10 +19,20 @@ const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const getMockTasks = async (status) => {
     await delay(500);
+    let filteredTasks = [...mockTasks];
     if (status && status !== 'ALL') {
-        return mockTasks.filter(t => t.status === status);
+        filteredTasks = mockTasks.filter(t => t.status === status);
     }
-    return [...mockTasks];
+
+    // Simulate the SQL JOIN to add assignee_name
+    return filteredTasks.map(task => {
+        const employee = mockEmployees.find(e => e.id === task.assignee_id);
+        return {
+            ...task,
+            assignee_name: employee ? employee.name : null,
+            assignee_avatar: employee ? employee.avatar : null
+        };
+    });
 };
 
 export const getMockEmployees = async () => {
